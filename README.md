@@ -7,7 +7,12 @@ Publishing chain for bilingual ebooks (EPUB and PDF) based on translation memory
 - Generate PDF
 - Generate EPUB
 
-## French books for Japanese speakers
+## Limitations ##
+- Only a small subset of the DocBook format is supported. For details about the supported scope, refer to the sample dataset.
+- As of September 2023, the generated EPUBs do not play well in Google Books.
+
+## Published bilingual books
+**French books for Japanese speakers**
 - *Pêcheur d'Islande*, 19th-century novel about fishermen in Brittany, written by Pierre Loti and translated by Takamatsu Yoshie.
 
 ## References

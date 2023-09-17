@@ -4,7 +4,7 @@ Publishing chain for bilingual ebooks (EPUB and PDF) based on translation memory
 ![Overview of the publishing chain](overview.png)
 - Prepare texts
 - Build DocBook
-- Generate PDF
+- [Generate PDF](https://github.com/japotrad/bilingual-ebooks/blob/main/3.%20Generate%20PDF/README.md)
 - Generate EPUB
 
 ## Limitations ##

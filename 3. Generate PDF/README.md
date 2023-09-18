@@ -5,7 +5,7 @@
 Note: Check the licence of the fonts before using them
 - Using XSLT/XPATH for Visual Studio Code, apply the stylesheet dbk2fo.xsl and transform the DocBook bilingual.dbk into the XSL-FO bilingual.fo
 - Optionally, for Chinese or Japanese fonts, create a smaller subset font file:
-  1. Using Apache FOP, generate a PDF file embedding the font subset.
+  1. Using [Apache FOP](https://xmlgraphics.apache.org/fop/), generate a PDF file embedding the font subset.
   2. Using [IDR Solutions Online PDF to HTML Converter](https://www.idrsolutions.com/online-pdf-to-html5-converter) get the font subset in WOFF format.
   3. Using FontForge, generate the subset TTF font file:
     - Encoding > Compact

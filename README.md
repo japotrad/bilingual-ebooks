@@ -8,7 +8,7 @@ Publishing chain for bilingual ebooks (EPUB and PDF) based on translation memory
 - Generate HTML for personal computers using [IDR solutions' Online PDF to HTML5 Converter](https://www.idrsolutions.com/online-pdf-to-html5-converter)
 - Generate EPUB
 
-## Limitations ##
+## Limitations
 - Only a small subset of the DocBook format is supported. For details about the supported scope, refer to the sample dataset.
 - As of September 2023, the generated EPUBs do not play well in Google Books.
 

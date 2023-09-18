@@ -8,7 +8,7 @@ Note: Check the licence of the fonts before using them
 - Optionally, for Chinese or Japanese fonts, create a smaller subset font file:
   1. Using [Apache FOP](https://xmlgraphics.apache.org/fop/), generate a PDF file embedding the font subset.
   2. Using [IDR Solutions Online PDF to HTML Converter](https://www.idrsolutions.com/online-pdf-to-html5-converter) get the font subset in WOFF format.
-  3. Using FontForge, generate the subset TTF font file:
+  3. Using [FontForge](https://fontforge.org/en-US/) 2023, generate the subset TTF font file:
     - Encoding > Compact
     - Element > Font Info > Update Fontname
     - File > Generate Font

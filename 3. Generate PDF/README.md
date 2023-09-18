@@ -1,4 +1,5 @@
 # Generate PDF
+Converter suite to transform a bilingual DocBook into an side-by-side bilingual PDF file conform to PDF/A-1b spec (for long-term preservation)
 
 ![Generate a PDF file from a DocBook file using XSL-FO and Apache FOP](generatePDF.png)
 - Choose fonts according to your project, get the corresponding TTF files and adjust fop.xconf and dbk2fo.xsl accordingly.

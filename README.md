@@ -5,6 +5,7 @@ Publishing chain for bilingual ebooks (EPUB and PDF) based on translation memory
 - Prepare texts
 - Build DocBook
 - [Generate PDF](https://github.com/japotrad/bilingual-ebooks/blob/main/3.%20Generate%20PDF/README.md)
+- Generate HTML for personal computers using [IDR solutions' Online PDF to HTML5 Converter](https://www.idrsolutions.com/online-pdf-to-html5-converter)
 - Generate EPUB
 
 ## Limitations ##

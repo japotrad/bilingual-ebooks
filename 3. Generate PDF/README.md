@@ -13,9 +13,9 @@ Note: Check the licence of the fonts before using them
     - File > Generate Font
 
   Note: By producing a subset font file that can then be included in full into the PDF file, this step is indeed a trick enabling to generate in the next step a file compliant with PDF/A-1b format, while embedding a font that contains more than 8191 glyphs. Besides, it reduces the size of the final PDF file by a couple of megabytes per font file.
-- Using Apache FOP 2.8, transform the XSL-FO bilingual.fo into the PDF bilingual.pdf (embedding all fonts in full)
+- Using [Apache FOP](https://xmlgraphics.apache.org/fop/) 2.8, transform the XSL-FO bilingual.fo into the PDF bilingual.pdf (embedding all fonts in full)
 - Using [veraPDF](https://verapdf.org/), check conformance to PDF/A-1b format
 
 ## Limitations
-- The stylesheet sbk2fo.xsl covers only a small subset of the DocBook 5.0 specification. For details about the supported scope, refer to the sample dataset.
+- The stylesheet dbk2fo.xsl covers only a small subset of the DocBook 5.0 specification. For details about the supported scope, refer to the sample dataset.
 - Only jpeg images are supported.

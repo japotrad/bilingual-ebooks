@@ -18,5 +18,5 @@ Note: Check the licence of the fonts before using them
 - Using [veraPDF](https://verapdf.org/), check conformance to PDF/A-1b format.
 
 ## Limitations
-- The stylesheet dbk2fo.xsl covers only a small subset of the DocBook 5.0 specification. For details about the supported scope, refer to the sample dataset.
+- The stylesheet dbk2fo.xsl covers only a small subset of the DocBook 5.0 specification.
 - Only jpeg images are supported.

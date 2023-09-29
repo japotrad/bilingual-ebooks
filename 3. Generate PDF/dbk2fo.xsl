@@ -93,7 +93,7 @@
             </xsl:element><!--  table-cell -->
         </xsl:element><!--  table-row -->
     </xsl:template>
-        <xsl:template match="db:printhistory">
+    <xsl:template match="db:printhistory">
         <xsl:element name="table-row" namespace="http://www.w3.org/1999/XSL/Format">
             <xsl:element name="table-cell" namespace="http://www.w3.org/1999/XSL/Format">
                 <xsl:element name="block" namespace="http://www.w3.org/1999/XSL/Format">
@@ -128,9 +128,9 @@
                     <xsl:call-template name="trans-lang-attributes" />
                     <xsl:apply-templates select="db:simpara/db:foreignphrase/text()|db:simpara/db:foreignphrase/node()"/>
                 </xsl:element><!-- block -->
-            </xsl:element><!--  table-cell -->
-        </xsl:element><!--  table-row -->
-    </xsl:template>
+            </xsl:element><!-- table-cell -->
+        </xsl:element><!-- table-row -->
+    </xsl:template><!-- printhistory -->
     <xsl:template match="db:appendix">
         <xsl:element name="page-sequence" namespace="http://www.w3.org/1999/XSL/Format">
             <xsl:attribute name="master-reference">bookpage</xsl:attribute>
@@ -1249,7 +1249,7 @@
                             <xsl:apply-templates select="/db:book/db:info/db:printhistory"/>
                             <xsl:call-template name="credits" />
                             <xsl:call-template name="publisher" />
-                            <xsl:apply-templates select="/db:book/db:info/db:biblioid"/>
+                            <xsl:apply-templates select="/db:book/db:info/db:biblioid[@role='pdf']"/>
                             <xsl:apply-templates select="/db:book/db:info/db:legalnotice"/>
                         </xsl:element><!--  table-body -->
                     </xsl:element><!-- table -->
@@ -1420,7 +1420,6 @@
                     <xsl:value-of select="/db:book/db:info/db:authorgroup/db:othercredit[@class='translator']/db:personname/db:surname/its:ruby/its:rb/text()" />
                     <xsl:text>&#xA;Photo : </xsl:text>
                      <xsl:apply-templates select="/db:book/db:info/db:cover/db:mediaobject/db:caption/db:simpara"/>
-                    <!--xsl:copy-of select="/db:book/db:info/db:cover/db:mediaobject/db:caption/text()"/ -->
                     <xsl:text>, par </xsl:text>
                     <xsl:copy-of select="/db:book/db:info/db:cover/db:mediaobject/db:info/db:author/db:personname/its:ruby/its:rb/text()"/>
                 </xsl:element><!--  block -->

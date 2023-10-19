@@ -426,10 +426,12 @@
         <xsl:value-of select="/db:book/db:info/db:authorgroup/db:author/db:personname/db:firstname/its:ruby/its:rb/text()"/>
         <xsl:text> </xsl:text>
         <xsl:value-of select="/db:book/db:info/db:authorgroup/db:author/db:personname/db:surname/its:ruby/its:rb/text()"/>
-        <br/><xsl:text>Traducteur : </xsl:text>
+        <xsl:value-of select="'&lt;br/&gt;'" disable-output-escaping="yes"/>
+        <xsl:text>Traducteur : </xsl:text>
         <xsl:value-of select="/db:book/db:info/db:authorgroup/db:othercredit[@class='translator']/db:personname/db:firstname/its:ruby/its:rb/text()"/>
         <xsl:text> </xsl:text><xsl:value-of select="/db:book/db:info/db:authorgroup/db:othercredit[@class='translator']/db:personname/db:surname/its:ruby/its:rb/text()"/>
-        <br/>Photo : <xsl:apply-templates select="/db:book/db:info/db:cover/db:mediaobject/db:caption/db:simpara"/>
+        <xsl:value-of select="'&lt;br/&gt;'" disable-output-escaping="yes"/>
+        <xsl:text>Photo : </xsl:text><xsl:apply-templates select="/db:book/db:info/db:cover/db:mediaobject/db:caption/db:simpara"/>
         <xsl:text>, par </xsl:text>
         <xsl:copy-of select="/db:book/db:info/db:cover/db:mediaobject/db:info/db:author/db:personname/its:ruby/its:rb/text()"/>  
     </xhtml:p>
@@ -444,10 +446,12 @@
         <xsl:copy-of select="/db:book/db:info/db:authorgroup/db:author/db:personname/db:firstname/its:ruby/its:rt/text()"/>
         <xsl:text>・</xsl:text>
         <xsl:copy-of select="/db:book/db:info/db:authorgroup/db:author/db:personname/db:surname/its:ruby/its:rt/text()"/>
-        <xhtml:br/><xsl:text>翻訳者：</xsl:text>
+        <xsl:value-of select="'&lt;br/&gt;'" disable-output-escaping="yes"/>
+        <xsl:text>翻訳者：</xsl:text>
         <xsl:value-of select="/db:book/db:info/db:authorgroup/db:othercredit[@class='translator']/db:personname/db:surname/its:ruby/its:rt/text()" />
         <xsl:value-of select="/db:book/db:info/db:authorgroup/db:othercredit[@class='translator']/db:personname/db:firstname/its:ruby/its:rt/text()" />
-        <xhtml:br/><xsl:text>表紙の写真家：</xsl:text>
+        <xsl:value-of select="'&lt;br/&gt;'" disable-output-escaping="yes"/>
+        <xsl:text>表紙の写真家：</xsl:text>
         <xsl:copy-of select="/db:book/db:info/db:cover/db:mediaobject/db:info/db:author/db:personname/its:ruby/its:rt/text()"/>
     </xhtml:p>
 </xsl:template>

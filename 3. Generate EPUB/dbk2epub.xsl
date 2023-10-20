@@ -36,7 +36,7 @@
 </xsl:template>
 <xsl:template match="db:appendix">
     <!--  XHTML file for the appendix -->
-    <xsl:result-document href="{lower-case(db:title/text())}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8">
+    <xsl:result-document href="{lower-case(db:title/text())}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8" include-content-type="no">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <xsl:attribute name="lang">
@@ -110,7 +110,7 @@
 <xsl:template match="db:index">
     <xsl:variable name="indexNumber" select="1 + count(preceding-sibling::*[name() = 'index'])"/>
     <!--  XHTML file for the index -->
-    <xsl:result-document href="index{$indexNumber}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8">
+    <xsl:result-document href="index{$indexNumber}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8" include-content-type="no">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <xsl:attribute name="lang">
@@ -187,7 +187,7 @@
     </li>
 </xsl:template>
 <xsl:template match="/db:book/db:info">
-<xsl:result-document href="frontmatter.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8">
+<xsl:result-document href="frontmatter.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8" include-content-type="no">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <xsl:attribute name="lang">
@@ -334,7 +334,7 @@
 <xsl:template match="db:part">
     <xsl:variable name="partNumber" select="1 + count(preceding-sibling::*[name() = 'part'])"/>
     <!--  XHTML file for the beginning of the part, including the 1st chapter -->
-    <xsl:result-document href="part{$partNumber}chapter1.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8">
+    <xsl:result-document href="part{$partNumber}chapter1.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8" include-content-type="no">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <xsl:attribute name="lang">
@@ -377,7 +377,7 @@
     <xsl:for-each select="db:chapter">
         <!--  XHTML file for each remaining chapter in the part -->
         <xsl:if test="position()>1" >
-            <xsl:result-document href="part{$partNumber}chapter{position()}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8">
+            <xsl:result-document href="part{$partNumber}chapter{position()}.xhtml" method="xhtml" omit-xml-declaration="no" indent="yes" encoding="utf-8" include-content-type="no">
                 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
                 <html>
                     <xsl:attribute name="lang">

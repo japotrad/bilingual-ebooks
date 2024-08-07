@@ -2,7 +2,7 @@
 Procedure to transform a bilingual DocBook into a reflowable EPUB file.
 
 ![Generate an EPUB file from a DocBook file using XSL and Sigil](generateEPUB.png)
-- Using XSLT/XPATH for Visual Studio Code, apply the stylesheet dbk2epub.xsl and transform the DocBook bilingual.dbk into a set of XHTML content files.
+- Using XSLT/XPATH for Visual Studio Code, apply the stylesheet dbk2epub.xsl and transform the DocBook bilingual.dbk into a set of unpaged XHTML content files.
 - Using [Sigil](https://sigil-ebook.com/), initalize an EPUB3 bilingual.epub file and:
   1. Import the content XHTML files.
   2. Import the image files.

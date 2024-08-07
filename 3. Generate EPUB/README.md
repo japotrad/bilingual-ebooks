@@ -10,7 +10,7 @@ Procedure to transform a bilingual DocBook into a reflowable EPUB file.
   4. Add the CSS stylesheets.
   5. Add the table of contents.
   6. Add the EPUB file metadata.
-- Using [EPUBCheck](https://www.w3.org/publishing/epubcheck/) and [Amazon Kindle Previewer 3](https://www.amazon.com/Kindle-Previewer/b?node=21381691011), check the EPUB file format.
+- Using [EPUBCheck](https://www.w3.org/publishing/epubcheck/), [Amazon Kindle Previewer 3](https://www.amazon.com/Kindle-Previewer/b?node=21381691011) and [Ace by DAISY](https://daisy.org/activities/software/ace/), check the EPUB file format.
 
 ## Limitations
 - The stylesheet dbk2epub.xsl covers only a small subset of the DocBook 5.0 specification.

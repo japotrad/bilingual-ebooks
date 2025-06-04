@@ -1,3 +1,6 @@
+# This repository has been moved to Codeberg on June 2025
+https://codeberg.org/Japotrad/bilingual-ebooks
+---
 # bilingual-ebooks
 Publishing chain for bilingual ebooks (EPUB and PDF) based on translation memory TMX and DocBook
 
